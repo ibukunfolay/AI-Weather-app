@@ -1,0 +1,102 @@
+*{
+   box-sizing: border-box; 
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+body{
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.app{
+   background-image: linear-gradient(to bottom, white, rgb(76, 76, 248), white, rgb(76, 76, 248), rgb(37, 37, 37) );
+   background-size: cover; 
+   background-position: bottom; 
+   transition: 200ms ease-in-out;
+}
+
+.app.warm {
+   background-image: linear-gradient(to bottom, rgb(216, 215, 157), rgb(231, 148, 100) );
+   background-size: cover; 
+   background-position: bottom;
+   transition: 300ms ease-in-out; 
+}
+
+section{
+   min-height: 100vh;
+   background-image: linear-gradient(to bottom, rgb(0,0,0,0.2), rgb(0,0,0,0.6));
+   padding: 30px;
+}
+
+.input-box{
+   width: 100%;
+   margin: 0,0,75px;
+   margin-top: 25px;
+}
+
+.input{
+   appearance: none;
+   outline: none;
+   border: none;
+   background: none;
+   display: block;
+   transition: 300ms ease;
+   width: 100%;
+   font-size: 13px;
+   margin-bottom: 30px;
+   padding: 20px;
+   background-color: rgb(255, 255, 255, 0.5);
+   border-radius: 10px 10px 10px 10px;
+   color: white;
+   box-shadow: 0px 3px rgb( 0,0,0,0.1 );
+}
+
+.input:focus{
+   background-color: rgb(255,255,255,0.7);
+   font-size: 15px;
+}
+
+.city{
+   color: white;
+   font-size: 35px;
+   font-weight: 500;
+   text-align: center;
+   text-shadow: 3px 3px rgb(50,50,70,0.5);
+   /* margin-top: 30px; */
+}
+.date{
+   color: white;
+   font-size: 20px;
+   font-weight: 300;
+   font-style: italic;
+   text-align: center;
+   text-shadow: 3px 3px rgb(50,50,70,0.5);
+}
+
+.weather-box{
+   text-align: center;
+}
+
+.temp{
+   position: relative;
+   margin: 30px auto;
+   display: inline-block;
+   color: white;
+   background-color: rgb(255, 255, 255, 0.2);
+   font-size: 110px;
+   font-weight: 900;
+   border-radius: 15px;
+   text-align: center;
+   padding: 15px 25px;
+   text-shadow: 3px 5px rgb(50,50,70,0.5);
+   box-shadow: 3px 6px rgb(0,0,0,0.2);
+}
+
+.remark{
+   color: white;
+   font-size: 50px;
+   font-weight: 700;
+   text-shadow: 3px 3px rgb(50,50,70,0.5);
+}
